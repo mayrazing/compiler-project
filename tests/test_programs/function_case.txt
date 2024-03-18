@@ -1,0 +1,23 @@
+print_int(1);
+prints 1
+---
+print_bool(false)
+prints false
+---
+var y = 5; y
+prints 5
+---
+var y = 5;
+if 1 > 2 then y = 1;
+---
+var x = 10 + if 1 > 2 then 3 else 4; x
+prints 14
+---
+var x :Int = 10;
+var y : Bool = true;
+while x > 3 do {x =x - 1; y = not y and (x < 3)};
+print_int(x);
+print_bool(y);
+prints 3
+prints false
+---

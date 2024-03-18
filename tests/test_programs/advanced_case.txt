@@ -1,0 +1,43 @@
+fun square(x: Int): Int {
+    return x * x;
+}
+
+fun vec_len_squared(x: Int, y: Int): Int {
+    return square(x) + square(y);
+}
+
+fun print_int_twice(x: Int) {
+    print_int(x); 
+    print_int(x);
+}
+
+print_int_twice(vec_len_squared(3, 4));
+
+prints 25
+prints 25
+---
+fun square_x(x: Int): Int {
+    return x * x;
+}
+
+var x :Int = 0;
+var y = 15;
+while x < 10 do {
+    while y > x do {
+        y = y - 1; 
+        x = x + 1;
+        if y < square_x(x) then break;
+        
+        x = square_x(x);
+    }
+
+    x = x + 1;
+    if y < square_x(x) then  continue;
+    x = square_x(x);
+};
+print_int(x);
+print_int(y);
+
+prints 10
+prints 10
+---

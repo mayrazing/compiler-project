@@ -1,0 +1,20 @@
+var x = 2;
+x = x + 1;
+x <= 4 and x >= 3
+prints true
+---
+var x = 2;
+var b : Bool = true;
+b = not not (x > 3);
+print_bool(b)
+prints false
+---
+var x = read_int();
+input 3
+print_int(x);
+x = x * 2 - 8;
+print_int(x);
+
+prints 3
+prints -2
+---
